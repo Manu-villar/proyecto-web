@@ -12,5 +12,12 @@ git checkout header
 git push origin header
 ------------------------------------------------------------
 # Manuel  crea header en el index.html
-
+git add .
+git commit -m "creacion de header"
+git push origin header
+------------------------------------------------------------
+# Manuel crea css 
+git add . 
+git commit -m "creacion de archivo css y estilos al header"
+git push origin header
 
