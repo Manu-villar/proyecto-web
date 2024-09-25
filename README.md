@@ -26,7 +26,7 @@ git checkout master
 git pull origin header
 git push origin master
 -------------------------------------------------------------
-# Manuel lleva los cambios de la rama master a footer y pone comentarios en el codígo generado por Israel
+# Manuel lleva los cambios de la rama master a header y pone comentarios en el codígo generado por Israel
 git checkout header
 git pull origin master
 git add .
@@ -40,3 +40,49 @@ git pull origin master
 # resuelvo conflictos
 git push origin master
 --------------------------------------------------------------
+
+#Israel clona el repositorio 
+git clone git@github.com:Manu-villar/proyecto-web.git
+
+#Israel trae los cambios en el repositorio master que ha hecho Manuel 
+git pull origin master
+
+#Israel crea la rama footer
+git branch footer
+git checkout footer
+git push origin footer
+
+#Israel crea el footer 
+git add .
+git commit -m "Creación de la sección footer"
+git push origin footer
+
+#Israel crea un archivo css y vincula HTML con CSS
+git add . 
+git commit -m "Creación de archivo css y enlace de html con css"
+git push origin footer
+
+#Israel lleva el codigo de la rama footer a la rama master
+git checkout master
+git pull origin footer
+git pull origin master
+
+#Se generan conflictos, ISrael lo resuelve 
+git commit -m "Conflicto resuelto"
+git push origin master
+
+#Israel lleva los cambios de la rama master a la rama footer
+git checkout footer
+git pull origin master
+
+#Israel pone un comentario en el header, la parte de manuel
+git add .
+git commit -m "Comentario en el header" 
+git push origin footer
+
+#Israel lleva los cambios de la rama footer a master
+git checkout master
+git pull origin footer
+git push origin master
+
+
